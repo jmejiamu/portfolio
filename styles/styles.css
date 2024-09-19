@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* CSS Dropdown Styling */
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.dropdown-checkbox {
+  display: none;
+}
+
+.dropdown-label {
+  display: block;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+  display: block;
+}
+
+.dropdown-label:hover {
+  background-color: #e0e0e0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-left: 1rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #6f6f6f; /* Change color on hover */
+  transform: scale(1.2);
+}
+footer {
+  text-align: center;
+}
+
+.project-link {
+  color: #333; /* Link color */
+  text-decoration: none;
+  padding: 0 0.5rem; /* Space between the links */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-link:hover {
+  color: #6f6f6f; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+span {
+  padding: 0 0.5rem; /* Space around the pipe symbol */
+  color: #333; /* Make the pipe a neutral color */
+}
