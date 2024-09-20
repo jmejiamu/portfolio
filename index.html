@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio with CSS-Only Dropdown Projects</title>
+    <title>Jose</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -19,6 +19,7 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blogs</a></li>
             <li>
               <a
                 href="https://drive.google.com/file/d/1i3CSo12S5JH1ZltvhEeMTOkcbeAbTeZh/view"
@@ -59,7 +60,7 @@
             id="walksmart-toggle"
             class="dropdown-checkbox"
           />
-          <label for="walksmart-toggle" class="dropdown-label">WalkSmart</label>
+          <label for="walksmart-toggle" class="dropdown-label">WalkSmart 📱</label>
           <div class="dropdown-content">
             <p>
               A React Native mobile app for discovering live events as you walk.
@@ -76,6 +77,7 @@
               <li>Google Maps API</li>
               <li>Node/Express</li>
               <li>PostgreSQL</li>
+              <li>Storybook</li>
             </ul>
             <h4>NOTE:</h4>
             <p>
@@ -108,7 +110,7 @@
             class="dropdown-checkbox"
           />
           <label for="techblog-toggle" class="dropdown-label"
-            >The Tech Blog</label
+            >The Tech Blog 🌐</label
           >
           <div class="dropdown-content">
             <p>
@@ -154,6 +156,98 @@
             </h4>
           </div>
         </div>
+                <!-- SF Living wage CSS Dropdown -->
+                <div class="project-item">
+                  <input
+                    type="checkbox"
+                    id="sf-toggle"
+                    class="dropdown-checkbox"
+                  />
+                  <label for="sf-toggle" class="dropdown-label"
+                    >San Francisco Living Wage Coalition 📱</label
+                  >
+                  <div class="dropdown-content">
+                    <p>
+                      Full-stack mobile app. The application allows users to participate in the art auction, assistance. 
+                      Moreover, users will be notified about the new events such as 
+                      art auctions and events that the organization host.
+                    </p>
+                    <h4>Features:</h4>
+                    <ul>
+                      <li>Art auction</li>
+                      <li>Assistance</li>
+                      <li>Organization updates</li>
+                    </ul>
+                    <h4>Technologies:</h4>
+                    <ul>
+                      <li>React Native / expo / javascript</li>
+                      <li>Node.js/Express</li>
+                      <li>PostgreSQL</li>
+                    </ul>
+                    <h4>
+                      <a
+                        class="project-link"
+                        target="_blank"
+                        href="https://apps.apple.com/us/app/sflivingwagecoalition/id1510663811"
+                        >Live</a
+                      >
+                      <span>|</span
+                      ><a
+                        class="project-link"
+                        target="_blank"
+                        href="https://github.com/jmejiamu/front-end-products"
+                      >
+                      Source Code</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+        <!-- Hacienda del sol CSS Dropdown -->
+        <div class="project-item">
+          <input
+            type="checkbox"
+            id="hotel-toggle"
+            class="dropdown-checkbox"
+          />
+          <label for="hotel-toggle" class="dropdown-label"
+            >Prototype Hacienda del Sol Hotel Scheduling App 📱</label
+          >
+          <div class="dropdown-content">
+            <p>
+              React Native app provides an intuitive interface for the front desk staff, allowing them to easily view and manage the healer's calendar. 
+            </p>
+            <h4>Features:</h4>
+            <ul>
+              <li>Login/ register system</li>
+              <li>Automated Scheduling</li>
+              <li>Real-Time Calendar</li>
+              <li>Customer Management</li>
+            </ul>
+            <h4>Technologies:</h4>
+            <ul>
+              <li>React Native / Expo / TypeScript</li>
+              <li>Node.js/Express</li>
+              <li>PostgreSQL</li>
+              <li>Storybook</li>
+            </ul>
+            <h4>
+              <a
+                class="project-link"
+                target="_blank"
+                href="https://drive.google.com/file/d/1IH7fYXui2x3VbXSuguAsCWo0tfrVQB0z/view?usp=sharing"
+                >Video</a
+              >
+              <span>|</span
+              ><a
+                class="project-link"
+                target="_blank"
+                href="https://github.com/jmejiamu/hotel-hub"
+              >
+                Source Code</a
+              >
+            </h4>
+          </div>
+        </div>
         <!-- TapOnIt CSS Dropdown -->
         <div class="project-item">
           <input
@@ -162,7 +256,7 @@
             class="dropdown-checkbox"
           />
           <label for="taponit-toggle" class="dropdown-label"
-            >TapOnIt challenge</label
+            >TapOnIt challenge 🌐</label
           >
           <div class="dropdown-content">
             <p>
@@ -199,8 +293,59 @@
             </h4>
           </div>
         </div>
+
       </div>
     </section>
+
+    <section id="blog" class="projects">
+      <div class="container">
+        <h2>Blogs</h2>
+
+        <!-- React Native Customized Button navigation -->
+        <div class="project-item">
+          <input
+            type="checkbox"
+            id="bottom-nav-toggle"
+            class="dropdown-checkbox"
+          />
+          <label for="bottom-nav-toggle" class="dropdown-label"
+            >Creating a Customized Bottom Navigation in React Native 📱</label
+          >
+          <div class="dropdown-content">
+            <p>
+             In modern mobile application, navigation plays a key role in providing a smooth 
+             and intuitive user experience. One of the most common navigation patterns used in apps
+             is the <strong>Bottom Navigation.</strong> It allows users to quickly switch between different
+             sections of the app, making it easier to navigate and access the most important features.
+            </p>
+            <p>While React Native provides some basic navigation libraries like <strong>React Navigation</strong>
+            with a BottomTabNavigator out the box, there are times when you might want more control over the design and 
+            functionalities. Whether you are looking to implement a custom design, add animation, or integrate with other features,
+              customizing the bottom navigation can elevate the user experience of your app.
+            </p>
+            <p>
+              In this blog post, we'll walk through how to create fully customized bottom navigation 
+              in React Native. We'll cover:
+            </p>
+            <ul>
+              <li>Styling the bottom navigation for a unique look</li>
+              <li>Adding icons</li>
+              <li>Enhancing user interaction with animations</li>
+            </ul>
+            
+            <h4>
+              <a
+                class="project-link"
+                href="/blogs/rn-bottom-nav.html"
+              >
+                Read More...</a>
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
 
     <footer id="contact">
       <div class="container">
