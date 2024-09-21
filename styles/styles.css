@@ -18,9 +18,15 @@ nav ul {
   justify-content: center;
   padding: 0;
 }
+.container___navigation--title {
+  display: none;
+}
 
 nav ul li {
   margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 nav ul li a {
@@ -32,6 +38,9 @@ nav ul li a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+}
+.about__me {
+  display: none;
 }
 
 h2 {
@@ -125,4 +134,46 @@ span {
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0;
+    background-color: #333;
+    border-top: 1px solid #555;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  h1 {
+    display: none; /* Hide the title for mobile */
+  }
+
+  nav ul li a i {
+    font-size: 20px; /* Adjust icon size for mobile */
+  }
+  .about__me {
+    display: block;
+    text-align: center;
+  }
+  .container___navigation--title {
+    display: block;
+    text-align: center;
+  }
+  footer {
+    margin-bottom: 30%; /* Ensure it's above the fixed header */
+  }
 }
