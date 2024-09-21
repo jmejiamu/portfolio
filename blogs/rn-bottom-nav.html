@@ -20,40 +20,84 @@
 
     <section id="overview" class="project-detail">
       <div class="container">
-        <h2>Overview</h2>
         <p>
-          First of all we need to install the necessary dependencies for the
-          bottom navigation yarn add @react-navigation/stack npx expo install
-          react-native-gesture-handler yarn add @react-navigation/native yarn
-          add react-native-safe-area-context yarn add
-          @react-navigation/bottom-tabs
+          First, let's understand understand how the bottom navigation works.
+          The bottom navigation behaves like a stack of screens, where each tab
+          is an individual screen. When a tab is clicked, the corresponding
+          screen is pushed to the top of the stack. This allows the user to
+          navigate between screens by switching tabs. Imagine a stack of cards
+          where each card represents a screen. When a tab is clicked, the
+          corresponding card is brought to the top of the stack.
         </p>
+        <h3>Installing the bottom navigation</h3>
+        <img src="../asset/install.png" alt="install" />
       </div>
     </section>
-
-    <section id="features" class="project-detail">
+    <section class="project-detail">
       <div class="container">
-        <h2>Features</h2>
-        <ul>
-          <li>Real-time event discovery based on user location.</li>
-          <li>Join and create events with a few taps.</li>
-          <li>Interactive map view for event locations and directions.</li>
-        </ul>
+        <h3>Creating the bottom navigation</h3>
+        <p>
+          To create the bottom navigation, let's create the bottom navigation
+          component. We are going to named it <code>BottomNav</code>. Here we
+          are going to have the main navigation with the screens we want to
+          display. In the <code>tabBar</code> we are going to call the
+          <code>CustomBottomNav</code> component and pass all the props.
+        </p>
+        <img
+          src="../asset/botton-nav.png"
+          alt="WalkSmart -
+        Overview"
+        />
       </div>
     </section>
-
-    <section id="technologies" class="project-detail">
+    <section class="project-detail">
       <div class="container">
-        <h2>Technologies Used</h2>
-        <ul>
-          <li>React Native</li>
-          <li>Expo</li>
-          <li>Google Maps API</li>
-          <li>Firebase</li>
-        </ul>
+        <h3>Styling the bottom navigation</h3>
+        <p>
+          To style the bottom navigation, we can use the
+          <code>StyleSheet</code> component from React Native. Also,we are going
+          to create a new component called <code>CustomBottomNav</code> which
+          had been called where we defined the bottom navigation . Now we can
+          define the styles for the navigation bar. In the next step we are
+          going to create a component called <code>CustomMenuIcon</code> to
+          style the icons
+        </p>
+        <img
+          src="../asset/style-nav-bar.png"
+          alt="WalkSmart -
+        Overview"
+        />
+      </div>
+    </section>
+    <section class="project-detail">
+      <div class="container">
+        <h3>Creating custom icons</h3>
+        <p>
+          To create the custom icons, we need to create a new component called
+          <code>CustomMenuIcon</code>. This component will contain the tabs'
+          icons and the animation logic for when the users tap on them.
+          Moreover, We can also define different styles for the active tab to
+          indicate which tab is currently selected. In this case, added
+          animation to the icon when it is tapped and the color when the icons
+          are focused.
+        </p>
+        <img src="../asset/menu-icon.png" alt="Menu Icon" />
       </div>
     </section>
 
+    <section class="project-detail">
+      <div class="container">
+        <h3>Using the bottom navigation</h3>
+        <p>
+          To use the bottom navigation in our app, we simply need to import the
+          <code>BottomNav</code> component and add it to our main app component.
+          We can pass the tab components as children to the
+          <code>NavigationContainer</code> component, and it will take care of
+          rendering the tabs and switching between them.
+        </p>
+        <img src="../asset/usage.png" alt="usage" />
+      </div>
+    </section>
     <footer id="contact">
       <div class="container">
         <p>

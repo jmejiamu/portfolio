@@ -111,3 +111,18 @@ span {
   padding: 0 0.5rem; /* Space around the pipe symbol */
   color: #333; /* Make the pipe a neutral color */
 }
+
+.project-detail p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-detail img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
