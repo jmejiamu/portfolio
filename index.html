@@ -2,26 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="This is a simple portfolio page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jose</title>
     <link rel="stylesheet" href="/styles/styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet" />
+
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="header__container">
         <h1>Jose H Mejia Munoz | Software Engineer</h1>
         <nav>
           <ul>
-            <li><a href="#about"><i class="fas fa-user"></i></a>About Me</li>
-            <li><a href="#projects"><i class="fas fa-briefcase"></i></a>Projects</li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i></a>Contact</li>
-            <li><a href="#blog"><i class="fas fa-blog"></i></a>Blogs</li>
+            <li><a href="#about" aria-label="Go to about section"><i class="fas fa-user"></i></a>About Me</li>
+            <li><a href="#projects" aria-label="Go to project section"><i class="fas fa-briefcase"></i></a>Projects</li>
+            <li><a href="#contact" aria-label="Go to contact section"><i class="fas fa-envelope"></i></a>Contact</li>
+            <li><a href="#blog" aria-label="Go to blogs section"><i class="fas fa-blog"></i></a>Blogs</li>
             <li>
-              <a href="https://drive.google.com/file/d/1i3CSo12S5JH1ZltvhEeMTOkcbeAbTeZh/view" target="_blank" class="resume-btn">
+              <a href="https://drive.google.com/file/d/1i3CSo12S5JH1ZltvhEeMTOkcbeAbTeZh/view" aria-label="See resume" target="_blank" class="resume-btn">
                 <i class="fas fa-file-alt"></i>
               </a>
               View Resume
@@ -32,7 +31,7 @@
     </header>
 
     <section id="about" class="about">
-      <h1 class="about__me">Jose H Mejia Munoz | Software Engineer</h1>
+      <h1 class="about__me--title">Jose H Mejia Munoz | Software Engineer</h1>
       <div class="container">
         <h2>About Me</h2>
         <p>
@@ -53,14 +52,14 @@
         <h2>Projects</h2>
 
         <!-- WalkSmart CSS Dropdown -->
-        <div class="project-item">
+        <div class="project__item">
           <input
             type="checkbox"
             id="walksmart-toggle"
-            class="dropdown-checkbox"
+            class="dropdown__checkbox"
           />
-          <label for="walksmart-toggle" class="dropdown-label">WalkSmart 📱</label>
-          <div class="dropdown-content">
+          <label for="walksmart-toggle" class="dropdown__label">WalkSmart 📱</label>
+          <div class="dropdown__content">
             <p>
               A React Native mobile app for discovering live events as you walk.
             </p>
@@ -84,34 +83,36 @@
             </p>
             <h4>
              <a
-                class="project-link"
-                target="_blank"
-                href="https://drive.google.com/file/d/1VHyaW4CFKw2QQdP9O0OF0fsAzTm-eQb7/view?usp=sharing"
+             class="project__link"
+             target="_blank"
+             href="https://drive.google.com/file/d/1VHyaW4CFKw2QQdP9O0OF0fsAzTm-eQb7/view?usp=sharing"
+             aria-label="Go to the video"
               >
                 Video</a
               >
 
               <span>|</span>
               <a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://www.figma.com/design/5y3youV2sYzgUVh8zg66Ch/Untitled?t=znZ49e7YfWi28OQM-0"
+                aria-label="Go to the design"
                 >Design</a
               >
           </div>
         </div>
 
         <!-- Tech Blog CSS Dropdown -->
-        <div class="project-item">
+        <div class="project__item">
           <input
             type="checkbox"
             id="techblog-toggle"
-            class="dropdown-checkbox"
+            class="dropdown__checkbox"
           />
-          <label for="techblog-toggle" class="dropdown-label"
+          <label for="techblog-toggle" class="dropdown__label"
             >The Tech Blog 🌐</label
           >
-          <div class="dropdown-content">
+          <div class="dropdown__content">
             <p>
               Full-stack web application that allows users to add, edit, delete
               a post, and comment, and update users images.
@@ -131,41 +132,44 @@
             </ul>
             <h4>
               <a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://the-tech-blog.netlify.app/"
+                aria-label="Go to the live site"
                 >Live</a
               >
               <span>|</span
               ><a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://github.com/jmejiamu/the-tech-blog"
+                aria-label="Go to the source code"
               >
                 Source Code</a
               >
 
               <span>|</span>
               <a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://www.figma.com/design/MP7PEL4CfYc5fyK0cN5U4I/REDESIGN?node-id=0-1&node-type=canvas&t=znZ49e7YfWi28OQM-0"
+                aria-label="Go to the design"
                 >Design</a
               >
             </h4>
           </div>
         </div>
                 <!-- SF Living wage CSS Dropdown -->
-                <div class="project-item">
+                <div class="project__item">
                   <input
                     type="checkbox"
                     id="sf-toggle"
-                    class="dropdown-checkbox"
+                    class="dropdown__checkbox"
                   />
-                  <label for="sf-toggle" class="dropdown-label"
+                  <label for="sf-toggle" class="dropdown__label"
                     >San Francisco Living Wage Coalition 📱</label
                   >
-                  <div class="dropdown-content">
+                  <div class="dropdown__content">
                     <p>
                       Full-stack mobile app. The application allows users to participate in the art auction, assistance. 
                       Moreover, users will be notified about the new events such as 
@@ -185,16 +189,18 @@
                     </ul>
                     <h4>
                       <a
-                        class="project-link"
+                        class="project__link"
                         target="_blank"
                         href="https://apps.apple.com/us/app/sflivingwagecoalition/id1510663811"
+                        aria-label="Go to the live site"
                         >Live</a
                       >
                       <span>|</span
                       ><a
-                        class="project-link"
+                        class="project__link"
                         target="_blank"
                         href="https://github.com/jmejiamu/front-end-products"
+                        aria-label="Go to the source code"
                       >
                       Source Code</a
                       >
@@ -202,16 +208,16 @@
                   </div>
                 </div>
         <!-- Hacienda del sol CSS Dropdown -->
-        <div class="project-item">
+        <div class="project__item">
           <input
             type="checkbox"
             id="hotel-toggle"
-            class="dropdown-checkbox"
+            class="dropdown__checkbox"
           />
-          <label for="hotel-toggle" class="dropdown-label"
+          <label for="hotel-toggle" class="dropdown__label"
             >Prototype Hacienda del Sol Hotel Scheduling App 📱</label
           >
-          <div class="dropdown-content">
+          <div class="dropdown__content">
             <p>
               React Native app provides an intuitive interface for the front desk staff, allowing them to easily view and manage the healer's calendar. 
             </p>
@@ -231,16 +237,18 @@
             </ul>
             <h4>
               <a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://drive.google.com/file/d/1IH7fYXui2x3VbXSuguAsCWo0tfrVQB0z/view?usp=sharing"
+                aria-label="Go to the video"
                 >Video</a
               >
               <span>|</span
               ><a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://github.com/jmejiamu/hotel-hub"
+                aria-label="Go to the source code"
               >
                 Source Code</a
               >
@@ -248,16 +256,16 @@
           </div>
         </div>
         <!-- TapOnIt CSS Dropdown -->
-        <div class="project-item">
+        <div class="project__item">
           <input
             type="checkbox"
             id="taponit-toggle"
-            class="dropdown-checkbox"
+            class="dropdown__checkbox"
           />
-          <label for="taponit-toggle" class="dropdown-label"
+          <label for="taponit-toggle" class="dropdown__label"
             >TapOnIt challenge 🌐</label
           >
-          <div class="dropdown-content">
+          <div class="dropdown__content">
             <p>
               The Full-stack Web application challenge was to create a online
               store with products, products details and like button.
@@ -276,16 +284,18 @@
             </ul>
             <h4>
               <a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://github.com/jmejiamu/back-end-products"
+                aria-label="Go to the back end source code"
                 >Back end source code</a
               >
               <span>|</span
               ><a
-                class="project-link"
+                class="project__link"
                 target="_blank"
                 href="https://github.com/jmejiamu/front-end-products"
+                aria-label="Go to the front end source code"
               >
                 Front end Source Code</a
               >
@@ -301,16 +311,16 @@
         <h2>Blogs</h2>
 
         <!-- React Native Customized Button navigation -->
-        <div class="project-item">
+        <div class="project__item">
           <input
             type="checkbox"
             id="bottom-nav-toggle"
-            class="dropdown-checkbox"
+            class="dropdown__checkbox"
           />
-          <label for="bottom-nav-toggle" class="dropdown-label"
+          <label for="bottom-nav-toggle" class="dropdown__label"
             >Creating a Customized Bottom Navigation in React Native 📱</label
           >
-          <div class="dropdown-content">
+          <div class="dropdown__content">
             <p>
              In modern mobile application, navigation plays a key role in providing a smooth 
              and intuitive user experience. One of the most common navigation patterns used in apps
@@ -334,8 +344,9 @@
             
             <h4>
               <a
-                class="project-link"
+                class="project__link"
                 href="/blogs/rn-bottom-nav.html"
+                aria-label="Read more"
               >
                 Read More...</a>
             </h4>
@@ -354,12 +365,13 @@
         </p>
 
         <div class="social-icons">
-          <a href="https://github.com/jmejiamu" target="_blank">
+          <a href="https://github.com/jmejiamu" aria-label="Got to github" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a
             href="https://www.linkedin.com/in/jose-h-mejia-munoz/"
             target="_blank"
+            aria-label="Go to linkedin"
           >
             <i class="fab fa-linkedin"></i>
           </a>

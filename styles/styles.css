@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-header {
+.header__container {
   background-color: #333;
   color: white;
   padding: 1rem;
@@ -39,8 +39,11 @@ nav ul li a {
   margin: 0 auto;
   padding: 2rem;
 }
-.about__me {
+.about__me--title {
   display: none;
+}
+.about p {
+  line-height: 1.6;
 }
 
 h2 {
@@ -48,15 +51,19 @@ h2 {
 }
 
 /* CSS Dropdown Styling */
-.project-item {
+.project__item {
   margin-bottom: 2rem;
 }
 
-.dropdown-checkbox {
+.project__item p {
+  line-height: 1.6;
+}
+
+.dropdown__checkbox {
   display: none;
 }
 
-.dropdown-label {
+.dropdown__label {
   display: block;
   cursor: pointer;
   background-color: #f4f4f4;
@@ -65,7 +72,7 @@ h2 {
   border-radius: 5px;
 }
 
-.dropdown-content {
+.dropdown__content {
   display: none;
   background-color: #fff;
   padding: 1rem;
@@ -74,11 +81,11 @@ h2 {
   margin-top: 0.5rem;
 }
 
-.dropdown-checkbox:checked + .dropdown-label + .dropdown-content {
+.dropdown__checkbox:checked + .dropdown__label + .dropdown__content {
   display: block;
 }
 
-.dropdown-label:hover {
+.dropdown__label:hover {
   background-color: #e0e0e0;
 }
 
@@ -104,14 +111,14 @@ footer {
   text-align: center;
 }
 
-.project-link {
+.project__link {
   color: #333; /* Link color */
   text-decoration: none;
   padding: 0 0.5rem; /* Space between the links */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.project-link:hover {
+.project__link:hover {
   color: #6f6f6f; /* Darker blue on hover */
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
@@ -121,13 +128,13 @@ span {
   color: #333; /* Make the pipe a neutral color */
 }
 
-.project-detail p {
+.project__detail p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.project-detail img {
+.project__detail img {
   width: 100%;
   max-width: 600px;
   display: block;
@@ -165,7 +172,7 @@ span {
   nav ul li a i {
     font-size: 20px; /* Adjust icon size for mobile */
   }
-  .about__me {
+  .about__me--title {
     display: block;
     text-align: center;
   }
